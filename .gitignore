@@ -1,0 +1,37 @@
+# ── Python ──
+*.py[cod]
+__pycache__/
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Django ──
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+media/*
+!media/.gitkeep
+
+# ── Environment ──
+.env
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+
+# ── InsightFace model cache ──
+.insightface/
+
+# ── Virtual env ──
+venv/
+.venv/
+env/

@@ -1,0 +1,37 @@
+# ── Core ──
+Django>=4.2,<5.1
+python-decouple>=3.8
+dj-database-url>=2.1
+
+# ── Database ──
+psycopg[binary]>=3.1       # PostgreSQL driver (optional for local dev with SQLite)
+
+# ── Image / Vision ──
+Pillow>=10.0
+opencv-python-headless>=4.8
+numpy>=1.24,<2.0
+
+# ── Face Recognition ──
+insightface>=0.7.3
+onnxruntime>=1.16           # CPU; swap for onnxruntime-gpu if FACE_USE_GPU=True
+
+# ── Azure ──
+django-storages[azure]>=1.14
+azure-storage-blob>=12.19
+openai>=1.12                # Azure OpenAI SDK for pass-number OCR
+
+# ── Static files ──
+whitenoise>=6.5
+
+# ── Server ──
+gunicorn>=21.2
+
+# ── Rate limiting ──
+django-ratelimit>=4.1
+
+# ── Optional: barcode detection ──
+# pyzbar>=0.1.9             # uncomment if you have libzbar installed
+
+# ── Dev / Testing ──
+# pytest-django>=4.5
+# coverage>=7.0
